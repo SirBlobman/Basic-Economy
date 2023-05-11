@@ -25,15 +25,15 @@ commands:
 
   eco-give:
     description: "Give money to a player."
-    permission: "economy.command.eco-give"
+    permission: "economy.command.give"
     usage: "/<command> <player> <amount>"
 
   eco-take:
     description: "Remove money from a player."
-    permission: "economy.command.eco-take"
+    permission: "economy.command.take"
     usage: "/<command> <player> <amount>"
 
   eco-set:
     description: "Set a specific amount of money for a player."
-    permission: "economy.command.eco-set"
+    permission: "economy.command.set"
     usage: "/<command> <player> <amount>"
