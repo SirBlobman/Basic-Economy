@@ -1,0 +1,39 @@
+name: "${pluginName}"
+prefix: "${pluginPrefix}"
+description: "${pluginDescription}"
+website: "${pluginWebsite}"
+
+main: "${pluginMainClass}"
+version: "${pluginVersion}"
+api-version: "1.13"
+load: "STARTUP"
+
+folia-supported: true
+
+authors:
+  - "SirBlobman"
+
+depend:
+  - "BlueSlimeCore"
+  - "Vault"
+
+commands:
+  balance:
+    description: "Check the balance of a player."
+    permission: "economy.command.balance"
+    usage: "/<command> <player>"
+
+  eco-give:
+    description: "Give money to a player."
+    permission: "economy.command.eco-give"
+    usage: "/<command> <player> <amount>"
+
+  eco-take:
+    description: "Remove money from a player."
+    permission: "economy.command.eco-take"
+    usage: "/<command> <player> <amount>"
+
+  eco-set:
+    description: "Set a specific amount of money for a player."
+    permission: "economy.command.eco-set"
+    usage: "/<command> <player> <amount>"
