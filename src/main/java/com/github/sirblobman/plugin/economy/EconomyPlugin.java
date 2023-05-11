@@ -64,7 +64,7 @@ public final class EconomyPlugin extends ConfigurablePlugin {
             return Collections.singletonList("1.0");
         }
 
-        return null;
+        return Collections.emptyList();
     }
 
     @Override

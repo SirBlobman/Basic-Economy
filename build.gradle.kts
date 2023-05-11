@@ -77,6 +77,7 @@ tasks {
 
     named<Jar>("jar") {
         archiveBaseName.set("BasicEconomy")
+        version = "0.0.1"
     }
 
     withType<JavaCompile> {
