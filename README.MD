@@ -1,6 +1,6 @@
 # Basic Economy
 
-A basic Vault economy plugin that runs on Spigot, Paper, and Folia servers.
+An extremely basic Vault economy plugin for Spigot, Paper, and Folia servers.
 
 ## Requirements
 
