@@ -5,8 +5,7 @@ An extremely basic Vault economy plugin for Spigot, Paper, and Folia servers.
 ## Requirements
 
 - Java 8
-- [Spigot](https://www.spigotmc.org/), [Paper](https://papermc.io/downloads/paper), or [Folia](https://papermc.io/software/folia) 1.8.8-1.19.4
-- [BlueSlimeCore](https://hangar.papermc.io/SirBlobman/BlueSlimeCore)
+- [Spigot](https://www.spigotmc.org/), [Paper](https://papermc.io/downloads/paper), or [Folia](https://papermc.io/software/folia) 1.8.8-1.20.4
 - Vault
 
 
