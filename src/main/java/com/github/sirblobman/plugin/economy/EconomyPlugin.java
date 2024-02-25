@@ -16,18 +16,19 @@ import org.bukkit.entity.Player;
 import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.ServicePriority;
 import org.bukkit.plugin.ServicesManager;
+import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.util.StringUtil;
-
-import com.github.sirblobman.api.plugin.ConfigurablePlugin;
 
 import net.milkbowl.vault.economy.Economy;
 import net.milkbowl.vault.economy.EconomyResponse;
 
-public final class EconomyPlugin extends ConfigurablePlugin {
+public final class EconomyPlugin extends JavaPlugin {
     private Economy economyHandler;
+    private PlayerDataManager playerDataManager;
 
     public EconomyPlugin() {
         this.economyHandler = null;
+        this.playerDataManager = new PlayerDataManager(this);
     }
 
     @Override
@@ -79,6 +80,10 @@ public final class EconomyPlugin extends ConfigurablePlugin {
         }
 
         return false;
+    }
+
+    public @NotNull PlayerDataManager getPlayerDataManager() {
+        return this.playerDataManager;
     }
 
     private @NotNull Economy getEconomyHandler() {

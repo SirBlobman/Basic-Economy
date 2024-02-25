@@ -37,14 +37,12 @@ repositories {
     mavenCentral()
     maven("https://hub.spigotmc.org/nexus/content/repositories/snapshots/")
     maven("https://oss.sonatype.org/content/repositories/snapshots/")
-    maven("https://nexus.sirblobman.xyz/public/")
     maven("https://nexus.sirblobman.xyz/proxy-jitpack/")
 }
 
 dependencies {
     compileOnly("org.jetbrains:annotations:24.0.1")
     compileOnly("org.spigotmc:spigot-api:1.8.8-R0.1-SNAPSHOT")
-    compileOnly("com.github.sirblobman.api:core:$coreVersion")
     compileOnly("com.github.MilkBowl:VaultAPI:1.7.1")
 }
 
@@ -76,8 +74,7 @@ tasks {
     }
 
     named<Jar>("jar") {
-        archiveBaseName.set("BasicEconomy")
-        version = "0.0.1"
+        version = "0.0.2"
     }
 
     withType<JavaCompile> {

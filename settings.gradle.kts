@@ -1,1 +1,1 @@
-rootProject.name = "Basic Economy"
+rootProject.name = "BasicEconomy"
